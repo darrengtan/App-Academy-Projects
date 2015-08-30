@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zoombable Pokemon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="zoomable.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="zoomable.css" type="text/css">
+  </head>
+  <body>
+    <h1>Zoombable Pokemon</h1>
+    <div class="zoomable">
+        <img src="http://i.imgur.com/LnM4UUV.jpg" alt="a lot of pokemans" />
+    </div>
+
+    <script>
+      $(function () {
+        $('.zoomable').zoomable();
+      })
+    </script>
+  </body>
+</html>

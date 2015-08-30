@@ -1,0 +1,88 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: helvetica;
+}
+
+.game-container {
+  font-size: 36px;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 0 25%;
+}
+
+.ttt {
+  box-sizing: border-box;
+  margin: 30px;
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 450px;
+  height: 450px;
+}
+
+.ttt:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.ttt ul {
+  width: inherit;
+  height: 33.33333333%;
+  display: block;
+  clear: left;
+}
+
+.square {
+  float: left;
+  font-size: 64px;
+  background-color: gray;
+  width: 33%;
+  height: 100%;
+  border: 3px solid black;
+}
+
+.square.full-square {
+  background-color: white;
+  line-height: 150px;
+}
+
+.square.full-square:hover {
+  background-color: lightgray;
+  cursor: default;
+}
+
+.square:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.x {
+  color: red;
+}
+
+.o {
+  color: blue;
+}

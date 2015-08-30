@@ -1,0 +1,96 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.game-container {
+  font-family: sans-serif;
+  width: 650px;
+  margin: 25%;
+  text-align: center;
+}
+
+.game-container h1 {
+  position: relative;
+  top: -200px;
+  font-size: 64px;
+}
+
+.hanoi {
+  position: relative;
+}
+
+.hanoi:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.pile {
+  box-sizing: border-box;
+  height: 170px;
+  width: 33%;
+  float: left;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-bottom: 10px solid black;
+}
+
+.pile:hover {
+  border-bottom: 10px solid blue;
+}
+
+.disc {
+  border-radius: 20px;
+  height: 30%;
+  background-color: gray;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.size-3 {
+  width: calc(100% - 20px);
+}
+
+.size-2 {
+  width: calc(66.666666% - 20px);
+}
+
+.size-1 {
+  width: calc(33.333333% - 20px);
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.pile.clicked {
+  border-bottom: 10px solid red;
+}
+
+.pile.pile-win:hover {
+  border-bottom: 10px solid black;
+}
+
+.disc.disc-win {
+  background-color: green;
+}

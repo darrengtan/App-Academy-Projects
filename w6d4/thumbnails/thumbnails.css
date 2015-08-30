@@ -1,0 +1,47 @@
+h1  {
+  text-align: center;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.thumbnails {
+  width: 400px;
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.gutter {
+  position: relative;
+}
+
+.gutter-images {
+  width: 90%;
+}
+
+.gutter-images img {
+  width: 20%;
+  position: relative;
+  left: 5%;
+}
+
+.active img {
+  width: 100%;
+}
+
+a.nav {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  text-decoration: none;
+  text-shadow: 0 0 5px;
+}
+
+a.nav.right {
+  left: 95%;
+}

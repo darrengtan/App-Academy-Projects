@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokédex Snap</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="thumbnails.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.2/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="thumbnails.css" type="text/css">
+  </head>
+  <body>
+    <div class="thumbnails">
+      <h1>Pokédex Snap</h1>
+      <div class="active"></div>
+      <div class="gutter">
+        <div class="gutter-images">
+          <img src="http://appacademy.github.io/jQueryPlugins/images/001.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/002.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/003.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/004.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/005.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/006.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/007.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/008.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/009.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/012.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/025.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/054.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/079.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/094.png" />
+          <img src="http://appacademy.github.io/jQueryPlugins/images/143.png" />
+        </div>
+        <a href="javascript:void(0)" class="nav">&lt;</a>
+        <a href="javascript:void(0)" class="nav right">&gt;</a>
+      </div>
+    </div>
+
+    <script>
+    $(function () {
+      $(".thumbnails").thumbnails();
+    })
+    </script>
+  </body>
+</html>

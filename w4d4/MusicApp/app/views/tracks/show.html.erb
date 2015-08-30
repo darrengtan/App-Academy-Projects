@@ -1,0 +1,13 @@
+<h1><%= @track.track_name %></h1>
+
+<%= button_to "Edit #{@track.track_name}", edit_track_url(@track), method: :get %>
+<%= button_to "Delete #{@track.track_name}", track_url(@track), method: :delete %>
+
+<br/>
+<%= render "notes/note", track: @track, current_user: current_user %>
+
+<br/>
+<%= render "notes/form", track: @track %>
+
+<br/>
+<%= link_to "Back to #{@track.track_name}", track_url(@track) %>

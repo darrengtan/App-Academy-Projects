@@ -1,0 +1,29 @@
+/* PHASE 4: Footer */
+.footer {
+  font-family: 'Roboto', sans-serif;
+  color: #ccc;
+  background: white;
+  width: 860px;
+  position: relative;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.left-footer{
+  float: left;
+}
+
+.footer-group{
+  float: right;
+}
+
+.footer-group li{
+  float:left;
+  padding: 0px 10px;
+}
+
+.footer-group li:hover{
+  color: black
+}

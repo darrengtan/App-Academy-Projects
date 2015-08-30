@@ -1,0 +1,17 @@
+h1 {
+  font-size: 24px;
+}
+
+.zoomable {
+  width: 200px;
+  position: relative;
+}
+
+.zoomable img {
+  width: 100%;
+}
+
+.focus-box {
+  border: 1px white solid;
+  position: absolute;
+}

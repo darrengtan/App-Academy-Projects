@@ -1,0 +1,40 @@
+/* PHASE 3: Layout */
+.content {
+
+  width: 900px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+  margin:0 auto;
+  position: relative;
+}
+
+.content:before{
+  content: "";
+  width: 1px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 240px;
+  background: #ccc
+
+}
+
+.content-sidebar{
+  float: left;
+  width:200px;
+  min-height: 200px;
+  height: 100%;
+  padding: 20px;
+
+
+}
+
+.content-main{
+  float: left;
+  width: 620px;
+  height: 100%;
+  min-height: 200px;
+  padding: 20px;
+
+}

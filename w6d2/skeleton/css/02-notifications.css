@@ -1,0 +1,34 @@
+/* PHASE 2: Notifications */
+span.badge {
+  padding: 1px 10px 5px;
+	background: black;
+  display: inline;
+	border-radius: 50%;
+}
+
+span.badge:hover {
+  background: red;
+}
+
+ul.drop-down-group {
+  position: absolute;
+  color: black;
+  display: none;
+  left: 0px;
+  white-space: nowrap;
+}
+
+li:hover > .drop-down-group{
+  display: block;
+  background-color: white;
+  /*position: absolute;*/
+}
+
+.drop-down-group li{
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+
+.drop-down-group li:hover{
+  background-color: #ccc;
+}

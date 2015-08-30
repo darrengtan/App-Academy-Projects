@@ -1,0 +1,42 @@
+<h1>Edit <%= @album.album_name %>!</h1>
+
+<form action="<%= album_url(@album) %>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <%= auth_token %>
+
+  <label for="album_name">Album Name</label>
+  <br/>
+  <input type="text" name="album[album_name]" id="album_name" value="<%= @album.album_name %>">
+
+  <br/>
+  <label>Album Type</label>
+  <br/>
+  <% Album::ALBUM_TYPES.each do |type| %>
+    <label for="album_type_<%= type.downcase %>">
+      <%= type.downcase %>
+    </label>
+    <input type="radio"
+           id="album_type_<%= type.downcase %>"
+           name="album[album_type]"
+           value="<%= type %>"
+           <%= @album.album_type == type ? "checked" : "" %>>
+  <% end %>
+
+  <br/>
+  <label for="band">Band</label>
+  <br/>
+  <select name="album[band_id]" id="band">
+    <% Band.all.each do |band| %>
+      <option
+        <%= band.id == @album.band.id ? "selected" : "" %>
+        value="<%= band.id %>">
+        <%= band.name %>
+      </option>
+    <% end %>
+  </select>
+
+  <br/><br/>
+  <input type="submit" value="Edit Album!">
+</form>
+<br/>
+<%= link_to "Back to #{@album.band.name} Page", band_url(@album.band) %>

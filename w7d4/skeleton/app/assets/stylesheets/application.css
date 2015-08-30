@@ -1,0 +1,121 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ h1, h2 {
+   color: white;
+   font-weight: normal;
+ }
+
+ul {
+  list-style-type: none;
+}
+
+div#root {
+  width: 100%;
+  position: relative;
+}
+
+div#sidebar {
+  float: left;
+  width: 20%;
+  overflow: hidden;
+}
+
+div#content {
+  float: left;
+  margin-top: -90px;
+  width: 70%;
+}
+
+div#content .entries-list {
+  font-weight: bold;
+  margin: 0;
+}
+
+div#root:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  background: url(http://www.hdaws.com/wp-content/uploads/2015/07/cat_wallpaper_338_awesome_high_quality_image_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: arial,sans-serif;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+ul.entries-list {
+  padding-left: 0;
+  border-top: solid gray 1px;
+  overflow-y: auto;
+  max-height: 500px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.entries-list-item {
+  border: solid gray 1px;
+  border-top: none;
+  padding: 5px 0px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: gray;
+}
+
+.labels {
+  position: relative;
+  border-left: 1px solid grey;
+}
+
+.labels:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.label {
+  overflow: hidden;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100px;
+  height: 30px;
+  border-right: 1px solid grey;
+  color: black;
+}
+
+.label a {
+  color: black;
+}
+
+.label:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.labels .label.selected {
+  background-color: grey;
+}

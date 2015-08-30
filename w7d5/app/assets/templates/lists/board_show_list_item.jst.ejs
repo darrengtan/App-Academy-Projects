@@ -1,0 +1,8 @@
+<%= list.escape("title") %>
+
+<ul class="<%= "board-list-cards-list list-" + list.escape("id") %>"></ul>
+
+<a href="#" class="new-card-form" data-id="<%= list.escape("id") %>">+ New Card</a>
+
+<br>
+<div class="<%= "card-form list-" + list.escape("id") %>"></div>

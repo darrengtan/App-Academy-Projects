@@ -1,0 +1,20 @@
+<h2><%= method %></h2>
+
+<form class="post-form">
+
+  <label>
+    Title:
+    <input type="text" class="post-title" name="post[title]" value="<%= post.escape('title') %>">
+  </label>
+
+  <br>
+  <label>
+    Body:
+    <textarea name="post[body]" rows="8" cols="40" class="post-body"><%= post.escape('body') %></textarea>
+  </label>
+
+  <br>
+  <input type="submit" class="post-submit">
+</form>
+
+<ul class="errors"></ul>
